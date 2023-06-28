@@ -20,6 +20,16 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
         body: Center(child: Text("This is the start of your application, and this is suppose to be the splash screen")),
       ),
+    return Scaffold(
+      body: Center
+        (child: Text(
+          "Welcome to Netisens Gallery",
+          style: TextStyle(
+            color: Colors.orange,
+            fontSize: 35,
+            fontWeight: FontWeight.bold,
+          ),
+      ),
     );
   }
 }
