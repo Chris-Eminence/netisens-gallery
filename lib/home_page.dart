@@ -13,10 +13,10 @@ class _CarouselPageState extends State<CarouselPage> {
   int activeIndex = 0;
   final controller = CarouselController();
   final imagePaths = [
-    'images/chairOne.png',
-    'images/chairTwo.png',
-    'images/chairThree.png',
-    'images/chairFour.png',
+    'images/first slide.png',
+    'images/first slide.png',
+    'images/first slide.png',
+    'images/first slide.png',
   ];
 
   @override
@@ -26,7 +26,7 @@ class _CarouselPageState extends State<CarouselPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Home",
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -92,10 +92,10 @@ class _CarouselPageState extends State<CarouselPage> {
                   ),
                 ),
               ),
-              Expanded(
+              const Expanded(
                 flex: 3,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -132,9 +132,13 @@ class _CarouselPageState extends State<CarouselPage> {
         borderRadius: BorderRadius.circular(40.0),
         shape: BoxShape.rectangle,
       ),
-      // child: Image.asset(
-      //   image,
-      // ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(40.0),
+        child: Image.asset(
+          image,
+          fit: BoxFit.cover,
+        ),
+      ),
     );
   }
 

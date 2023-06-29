@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:netisens_gallery/home_page.dart';
 import 'package:netisens_gallery/primary_onboarding.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -26,9 +25,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Color.fromRGBO(0x1B, 0x06, 0x36, 1),
-
+      return  Scaffold(
+      backgroundColor: const Color.fromRGBO(0x1B, 0x06, 0x36, 1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
